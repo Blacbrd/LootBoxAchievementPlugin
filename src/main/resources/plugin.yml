@@ -1,0 +1,4 @@
+name: LootboxAchievement
+version: '${project.version}'
+main: me.blacbrd123.lootboxachievement.LootboxAchievement
+api-version: '1.20'
