@@ -2,3 +2,11 @@ name: LootboxAchievement
 version: '${project.version}'
 main: me.blacbrd123.lootboxachievement.LootboxAchievement
 api-version: '1.20'
+commands:
+  claim:
+    usage: /<command>
+    description: If you were unable to receive a lootbox, you can use this command to claim it a different time
+  acceptclaim:
+    usage: /<command>
+    description: nothing
+
