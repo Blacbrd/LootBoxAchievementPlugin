@@ -1,0 +1,15 @@
+rareItems:
+  - DIAMOND
+  - DIAMOND_SWORD
+mediumItems:
+  - IRON_SWORD
+  - SHIELD
+itemRarity:
+  rare:
+    5
+  medium:
+    30
+itemAmountUpperBound:
+  7
+minimumItemAmount:
+  4

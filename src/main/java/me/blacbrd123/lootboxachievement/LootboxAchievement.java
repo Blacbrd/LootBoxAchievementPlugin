@@ -4,8 +4,11 @@ import me.blacbrd123.lootboxachievement.commands.AcceptClaimCommand;
 import me.blacbrd123.lootboxachievement.commands.ClaimChestCommand;
 import me.blacbrd123.lootboxachievement.listeners.PlayerAchievementListener;
 import me.blacbrd123.lootboxachievement.randomItemCreator.CreateItems;
+import org.bukkit.configuration.file.FileConfiguration;
+import org.bukkit.configuration.file.YamlConfiguration;
 import org.bukkit.plugin.java.JavaPlugin;
 
+import java.io.File;
 import java.util.HashMap;
 import java.util.Objects;
 import java.util.UUID;
@@ -13,6 +16,7 @@ import java.util.UUID;
 public final class LootboxAchievement extends JavaPlugin {
 
     CreateItems createItems;
+    FileConfiguration config = null;
 
     private final HashMap<UUID, Integer> claimCounter = new HashMap<>();
 
@@ -23,7 +27,11 @@ public final class LootboxAchievement extends JavaPlugin {
     @Override
     public void onEnable() {
 
-        createItems = new CreateItems();
+        File file = new File(this.getDataFolder(), "config.yml");
+
+        this.config = YamlConfiguration.loadConfiguration(file);
+
+        createItems = new CreateItems(this.config);
 
         loadCommands();
         loadListeners();
