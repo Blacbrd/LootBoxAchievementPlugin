@@ -1,6 +1,6 @@
 package me.blacbrd123.lootboxachievement;
 
-// Test commit
+// Test commit yes
 
 import me.blacbrd123.lootboxachievement.commands.AcceptClaimCommand;
 import me.blacbrd123.lootboxachievement.commands.ClaimChestCommand;
