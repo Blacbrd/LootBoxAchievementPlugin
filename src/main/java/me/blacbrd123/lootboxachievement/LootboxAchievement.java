@@ -1,5 +1,7 @@
 package me.blacbrd123.lootboxachievement;
 
+// Test commit
+
 import me.blacbrd123.lootboxachievement.commands.AcceptClaimCommand;
 import me.blacbrd123.lootboxachievement.commands.ClaimChestCommand;
 import me.blacbrd123.lootboxachievement.listeners.PlayerAchievementListener;
